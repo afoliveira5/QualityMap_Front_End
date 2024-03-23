@@ -25,10 +25,6 @@ Then ("I see the registration screen", () => {
 });
 
 
-
-
-
-
 Given ("I am on the registration screen", () => {
   loginPage.accessLoginPage();
   cy.wait(500);
@@ -39,53 +35,12 @@ Given ("I am on the registration screen", () => {
 When ("to create a user", () => {
   UserRegistrationPage.sucessRegister();
   
-
-
 });
 
 Then ("I see message sucess", () => {
- // cy.wait(50000000000);
- 
+  UserRegistrationPage.viewMessageSucess() 
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Given("I am on the user registration screen", ()=>{ 
   loginPage.accessLoginPage();
@@ -100,8 +55,8 @@ When  ("click to create an unnamed user", ()=>{
 
 
 });
-Then  ("I see the mandatory message", ()=>{ 
 
+Then  ("I see the mandatory message", ()=>{ 
   UserRegistrationPage.viewMessageMandatoryFirstName();
   UserRegistrationPage.viewMessageMandatoryLastName();
   UserRegistrationPage.viewMessageMandatoryEmail();
@@ -110,12 +65,3 @@ Then  ("I see the mandatory message", ()=>{
 
 
 })
-
-
-
-
-
-
-
-
-

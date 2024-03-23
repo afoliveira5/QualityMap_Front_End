@@ -1,5 +1,6 @@
 /// <reference types = "Cypress" />
 import { ELEMENTS as el } from "../elementsMapping/User_Registration_elements";
+import { faker } from '@faker-js/faker';
 require("cypress-xpath");
 
 class UserRegistrationPage {
@@ -43,91 +44,16 @@ class UserRegistrationPage {
   sucessRegister() {
     cy.get(el.male).click();
     //cy.get(el.women).click();
-    cy.get(el.firstNameUser).type("Aparecido Ferreira de ");
-    cy.get(el.lastNameUser).type("Oliveira"); 
+    cy.get(el.firstNameUser).type(faker.person.firstName());
+    cy.get(el.lastNameUser).type(faker.person.lastName()); 
     cy.get(el.dateOfBirthDay).select('18')
     cy.get(el.dateOfBirthMonth).select('2')
     cy.get(el.dateOfBirthYear).select('1993')
-    cy.get(el.userEmail).type("aparecidooliveira@teste.com");
+    cy.get(el.userEmail).type(faker.internet.email());
     cy.get(el.userPassword).type("Teste123");
     cy.get(el.confirmPassword).type("Teste123");
     cy.get(el.btnRegister).click();
   
-  }
-
-  missingFirstName(){
-    //cy.get('svg').find('id-of-svg-element')
-    //cy.get(el.male).click();
-    //cy.get(el.women).click();
-    //cy.get(el.firstNameUser).type("Aparecido Ferreira de ");
-    //cy.get(el.lastNameUser).type("Oliveira");
-    //cy.get(el.userEmail).type("aparecidooliveira@teste.com");
-    //cy.get(el.userPassword).type("Teste123");
-    //cy.get(el.confirmPassword).type("Teste123");
-    //cy.get(el.dateOfBirthDay).select('18')
-    //cy.get(el.dateOfBirthMonth).select('2')
-    //cy.get(el.dateOfBirthYear).select('3')
-   
-  }
-
-  LastnameMissing(){
-    //cy.get('svg').find('id-of-svg-element')
-    //cy.get(el.male).click();
-    //cy.get(el.women).click();
-    //cy.get(el.firstNameUser).type("Aparecido Ferreira de ");
-    //cy.get(el.lastNameUser).type("Oliveira");
-    //cy.get(el.userEmail).type("aparecidooliveira@teste.com");
-    //cy.get(el.userPassword).type("Teste123");
-    //cy.get(el.confirmPassword).type("Teste123");
-    //cy.get(el.dateOfBirthDay).select('18')
-    //cy.get(el.dateOfBirthMonth).select('2')
-    //cy.get(el.dateOfBirthYear).select('3')
-   
-  }
-
-  missingEmailAddress(){
-    //cy.get('svg').find('id-of-svg-element')
-    //cy.get(el.male).click();
-    //cy.get(el.women).click();
-    //cy.get(el.firstNameUser).type("Aparecido Ferreira de ");
-    //cy.get(el.lastNameUser).type("Oliveira");
-    //cy.get(el.userEmail).type("aparecidooliveira@teste.com");
-    //cy.get(el.userPassword).type("Teste123");
-    //cy.get(el.confirmPassword).type("Teste123");
-    //cy.get(el.dateOfBirthDay).select('18')
-    //cy.get(el.dateOfBirthMonth).select('2')
-    //cy.get(el.dateOfBirthYear).select('3')
-   
-  }
-
-  missingPassword(){
-    //cy.get('svg').find('id-of-svg-element')
-    //cy.get(el.male).click();
-    //cy.get(el.women).click();
-    //cy.get(el.firstNameUser).type("Aparecido Ferreira de ");
-    //cy.get(el.lastNameUser).type("Oliveira");
-    //cy.get(el.userEmail).type("aparecidooliveira@teste.com");
-    //cy.get(el.userPassword).type("Teste123");
-    //cy.get(el.confirmPassword).type("Teste123");
-    //cy.get(el.dateOfBirthDay).select('18')
-    //cy.get(el.dateOfBirthMonth).select('2')
-    //cy.get(el.dateOfBirthYear).select('3')
-   
-  }
-
-  missingPasswordConfirmation(){
-    //cy.get('svg').find('id-of-svg-element')
-    //cy.get(el.male).click();
-    //cy.get(el.women).click();
-    //cy.get(el.firstNameUser).type("Aparecido Ferreira de ");
-    //cy.get(el.lastNameUser).type("Oliveira");
-    //cy.get(el.userEmail).type("aparecidooliveira@teste.com");
-    //cy.get(el.userPassword).type("Teste123");
-    //cy.get(el.confirmPassword).type("Teste123");
-    //cy.get(el.dateOfBirthDay).select('18')
-    //cy.get(el.dateOfBirthMonth).select('2')
-    //cy.get(el.dateOfBirthYear).select('3')
-   
   }
 
 
