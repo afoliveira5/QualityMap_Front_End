@@ -11,7 +11,7 @@
   "author": "Aparecido.Oliveira",
   "license": "ISC",
   "cypress-cucumber-preprocessor": {
-    "stepDefinitions": "cypress/support/step_definitions",
+    "stepDefinitions": "support/step_definitions",
     "nonGlobalStepDefinitions": false
   },
   "devDependencies": {
