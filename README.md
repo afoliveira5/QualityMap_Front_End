@@ -8,7 +8,7 @@ let's go ?
 #### Step 1: clone the repository on your machine
 
 >```
->git clone https://github.com/afoliveira5/estudando_cypress_com_cucumber_gherkin.git
+>git clone https://github.com/afoliveira5/QualityMap_Front_End.git
 >```
 
 #### Step 2 : Now let's install the dependencies with the command below
