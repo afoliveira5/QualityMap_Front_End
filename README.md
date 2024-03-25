@@ -1,4 +1,4 @@
-# Welcome to the Quality repository of the project
+# Welcome to the Quality repository of the project of Front_End
 ## Cypress_with_cucumber + Gherkin 
 
 ### In this document I will teach you how to install the project step by step and how to run the project too
